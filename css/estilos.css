@@ -1,0 +1,51 @@
+/* Selector "*": aplica a TODOS los elementos. box-sizing:border-box hace que
+   el padding y el borde se cuenten DENTRO del ancho, no se sumen aparte. */
+* {
+    box-sizing: border-box;
+}
+
+/* Selector de etiqueta "body": estilos del cuerpo de toda la página */
+body {
+    margin: 0;
+    /* quita el margen blanco por defecto del navegador */
+    font-family: system-ui, sans-serif;
+    /* usa la tipografía del sistema operativo */
+    background-color: #f1f5f4;
+    /* color de fondo, un gris-verde muy claro */
+    color: #142523;
+    /* color del texto, casi negro con tono verdoso */
+}
+
+header {
+    background-color: #0e6b5c;
+    /* verde-azulado, el color "de marca" de la tienda */
+    color: white;
+    /* texto blanco para que contraste con el fondo oscuro */
+    padding: 1.5rem;
+    /* espacio interno alrededor del texto */
+    text-align: center;
+    /* centra el texto horizontalmente */
+}
+
+main {
+    max-width: 640px;
+    /* no deja que el texto se estire demasiado en pantallas anchas */
+    margin: 2rem auto;
+    /* 2rem arriba/abajo, "auto" centra horizontalmente */
+    padding: 0 1rem;
+}
+
+footer {
+    text-align: center;
+    color: #3f5450;
+    /* gris suave, menos protagonismo que el texto principal */
+    padding: 1rem;
+    font-size: 0.85rem;
+}
+
+/* code: estilo para el texto dentro de <code>, como si fuera una etiqueta física */
+code {
+    background: #e8f0ed;
+    border-radius: 4px;
+    padding: 0.1em 0.4em;
+}
