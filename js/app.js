@@ -20,8 +20,7 @@ window.addEventListener("offline", actualizarPildoraConexion);
 // navegador soporte la API antes de intentar usarla (Safari viejo, por ejemplo, no).
 if ("serviceWorker" in navigator) {
     window.addEventListener("load", () => {
-        navigator.serviceWorker
-            .register("sw.js")
+        navigator.serviceWorker.register('./sw.js')
             .then((registro) => {
                 console.log("Service Worker registrado con éxito:", registro.scope);
             })
